@@ -12,16 +12,16 @@ struct nodo{
 
 typedef struct nodo *TpLista; 
 
- TpLista crearNodo(){
-     	TpLista nuevo=NULL;
-     	//nodo *nuevo=NULL;
-     	nuevo= new(struct nodo);
-     	cout<<"Ingresar valor ---> ";
-		cin>>nuevo->nro;
-		cout<<endl;
-		nuevo->sgte =NULL;
-		return nuevo;
-	 }
+TpLista crearNodo(){
+    TpLista nuevo=NULL;
+    //nodo *nuevo=NULL;
+    nuevo= new(struct nodo);
+    cout<<"Ingresar valor ---> ";
+	cin>>nuevo->nro;
+	cout<<endl;
+	nuevo->sgte =NULL;
+	return nuevo;
+}
 
 void MostrarLista(TpLista lista){
 
